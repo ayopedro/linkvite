@@ -1,0 +1,45 @@
+.features {
+    display: flex;
+    flex-direction: column;
+    margin-block: 20px;
+    width: 100%;
+}
+
+.content {
+    text-align: center;
+    margin-block: 30px;
+    width: 40%;
+    align-self: center;
+}
+
+.content h2 {
+    color: #604AF3;
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+
+.content h3 {
+    font-size: 2rem;
+}
+
+.content p {
+    margin-block: 10px;
+    line-height: 2;
+}
+
+.cardArea {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+@media (max-width: 900px) {
+    .content {
+        width: 100%;
+    }
+
+    .cardArea {
+        display: flex;
+        flex-direction: column;
+    }
+  }

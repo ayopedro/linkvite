@@ -1,0 +1,6 @@
+.main {
+    background-image: url(../../assets/26.svg);
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    min-height: 100vh;
+}

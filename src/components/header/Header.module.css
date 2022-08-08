@@ -1,0 +1,7 @@
+.header {
+    min-height: 100vh;
+    background-image: url(../../assets/gradient.svg);
+    background-repeat: no-repeat;
+    background-position: 50% -100px;
+    background-size: cover;
+}

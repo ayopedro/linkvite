@@ -1,0 +1,70 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 1000000000;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.modal {
+  display: flex;
+  position: fixed;
+  top: 30vh;
+  left: 10%;
+  width: 80%;
+  z-index: 1000000000;
+  overflow: hidden;
+  border-radius: 10px;
+  background-color: #fafafa;
+  height: 45vh;
+  background-image: url(../assets/confetti.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: 0 -10%;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 10px 30px;
+  align-self: center;
+}
+
+.content img {
+  border-radius: 50%;
+  width: 25%;
+  margin-block: 10px;
+}
+
+.actions {
+  padding: 0.3rem 1.5rem;
+  background-color: #fa5a5f;
+  color: #fafafa;
+  border: 0;
+  border-radius: 5px;
+  text-transform: capitalize;
+  margin-top: 30px;
+  cursor: pointer;
+}
+
+@media (min-width: 900px) {
+  .modal {
+    left: calc(50% - 20rem);
+    width: 40rem;
+    height: 50vh;
+  }
+
+  .content {
+    width: 60%;
+    margin-inline: auto;
+  }
+
+  .actions {
+    padding: 0.5rem 4rem;
+    margin-top: 50px;
+  }
+}
